@@ -77,6 +77,13 @@
                 target="_blank"><b>Daring Fireball</b></a>, and comments
               collected from various threads and comment section with further
               discoveries of markdown that has successfully worked.</p>
+            <p>Here, we will show what the proper Markdown syntax is, how it is
+              supposed to look when rendered, and how it is interpreted by <b>MeWe</b>.
+              We are intentionally including things that don't work properly or
+              at all so users know that, when they try it themselves and it
+              doesn't work, that it wasn't something they did wrong. Here we'll
+              try to answer the question: "Google said this should work. Am I
+              doing it wrong?" Probably not.</p>
             <p>This guide is intended for Desktop/browser users. I will attempt
               to put together an Android app usage guide based on current
               desktop findings in the future. I do not have access to an App/iOS
@@ -721,13 +728,15 @@
                 </tr>
               </tbody>
             </table>
-            <h3>Images</h3>
+            <h3>Adding or Linking Images</h3>
             <p>
               <meta http-equiv="content-type" content="text/html; charset=utf-8">
               To add an image, add an exclamation mark (<code>!</code>),
-              followed by alt text in brackets, and the path or URL to the image
-              asset in parentheses. You can optionally add a title after the URL
-              in the parentheses.</p>
+              followed by alt text in brackets, and the path or URL to the
+              image asset in parentheses. You can optionally add a
+              title after the URL in the parentheses.<br>
+              To add a link to an image, enclose the Markdown for the image in
+              brackets, and then add the link in parentheses.</p>
             <p></p>
             <p></p>
             <table style="width: 100%" border="1">
@@ -738,31 +747,18 @@
                   <td class="alert alert-info" role="alert"><strong>Expected
                       Output</strong></td>
                   <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
-                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                  <td class="alert alert-danger" role="alert" width="1px"><strong>Failed</strong></td>
                 </tr>
                 <tr>
-                  <td><code>
-                      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-                      <code>![Click on over to MeWe and try out these
-                        codes!](/images/mewelogo169x67.png "Join MeWe
-                        Today!")<br>
-                      </code></code></td>
-                  <td><img src="images/mewelogo256x.png" alt="Click on over to MeWe and try out these codes!"
+                  <td><code>![Click on over to MeWe and try out these
+                        codes!](/images/mewelogo169x67.png "Join MeWe Today!")<br>
+                      </code></td>
+                  <td><img src="images/mewelogo169x67.png" alt="Click on over to MeWe and try out these codes!"
                       title="Join MeWe Today!"><br>
                   </td>
-                  <td colspan="2"><br>
-                  </td>
+                  <td colspan="2"><img src="images/imagefail1.png"> </td>
                 </tr>
-                <tr>
-                  <td><code>Have you been on *[Reddit](https://www.reddit.com)*
-                      lately?</code></td>
-                  <td>Have you been on <a href="https://www.reddit.com" target="_blank"><i>Reddit</i></a>
-                    lately?</td>
-                  <td colspan="2"><a href="https://www.reddit.com" target="_blank"><img
-                        src="images/link6.png"></a><br>
-                  </td>
-                </tr>
-              </tbody>
+                </tbody>
             </table>
             <!-- END SECTION 2 CONTENT --> </div>
           <div class="col-md-1"> </div>

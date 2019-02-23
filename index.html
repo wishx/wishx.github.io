@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MeWe Markdown Usage Guide</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather%7COpen+Sans"
+      rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/onepagers-solid.css" rel="stylesheet">
+    <link href="./css/colours.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#topnav">
+    <!-- MAIN CONTAINER -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="topnav">
+      <div class="container">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#">MeWe Markdown Usage Guide</a> </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section3">The Theme</a></li>
+            <li><a href="#section4">Contact Us</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> </div>
+    </nav>
+    <div class="container-fluid">
+      <!-- START SECTION 1 -->
+      <div class="row">
+        <div class="col-md-12 leadsection innershadow mirage1" id="section1">
+          <div class="col-md-1"> </div>
+          <div class="col-md-10">
+            <!-- START SECTION 1 CONTENT -->
+            <h1>MeWe Markdown Usage Guide</h1>
+            <br>
+            <p class="lead">Greetings and welcome to the <i>MeWe Markdown Usage
+                Guide</i>.</p>
+            <span class="btnversion">Latest Version: 0.5alpha - Last Update: 21 Feb,
+              2019</span>
+            <p><span class="alert alert-danger" role="alert"> <strong>This
+                  guide is incomplete and still very much a work in progress! This is an alpha test site!</strong>
+                </span></p>
+            <p>In lieu of an official <strong>MeWe</strong>
+              markdown guide of any kind, I have attempted to consolidate
+              everything we <strong>MeWe</strong> users know about how <strong>MeWe</strong>
+              interprets the Markdown language.</p>
+            <p><span class="alert alert-warning" role="alert"> <strong>Note:</strong>
+                This is an unnoficial <b>MeWe</b> guide and is not directly
+                affiliated with <b>MeWe</b> in any way.</span></p>
+            <p>This guide is a compilation of the well-known <strong><a href="https://sproutsluckycorner.wordpress.com/2018/05/21/mewe-markup-guide/"
+                  target="_blank">MeWe markup guide</a></strong> by <strong>Dandelion
+                Sprout</strong>, the trial-and-error work of <strong><a href="https://mewe.com/profile/5bc7f3481870d9076e89b6b9"
+                  target="_blank">Fritigern Gothly</a></strong> on <strong>MeWe</strong>
+              (which uses <strong>Adam Pritchard</strong>'s <strong><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
+                  target="_blank">Markdown Cheatsheet</a> </strong>as a base
+              for comparison), the excellent <strong><a href="https://www.markdownguide.org/basic-syntax"
+                  title="Basic Syntax" target="_blank">Basic Syntax</a></strong>
+              by <strong><a href="http://mattcone.com/" title="Matt Cone" target="_blank">Matt
+                  Cone</a></strong> at <strong><a href="https://www.markdownguide.org"
+                  title="MarkdownGuide.org" target="_blank">MarkdownGuide.org</a></strong>,
+              the official Markdown documentation by <a href="https://daringfireball.net/projects/markdown/"
+                target="_blank"><b>Daring Fireball</b></a>, and comments
+              collected from various threads and comment section with further
+              discoveries of markdown that has successfully worked.</p>
+            <p>This guide is intended for Desktop/browser users. I will attempt
+              to put together an Android app usage guide based on current
+              desktop findings in the future. I do not have access to an App/iOS
+              device. If someone would like to take this guide and send
+              screenshots, I will include them in another page in the future.</p>
+            <p>The <b>MeWe Output</b> sections below are snipets of screenshots
+              from a MeWe post with <a href="https://darkreader.org/" title="Dark Reader"
+                target="_blank"><b>Dark Reader</b></a> activated.</p>
+            <p>If you have a suggestion or found a markdown syntax that works
+              but isn't listed, please let me know.</p>
+            <p>Scroll down for the latest markdown syntax comparisons. Thank you
+              and enjoy!</p>
+            <!-- END SECTION 1 CONTENT --> </div>
+          <div class="col-md-1"> </div>
+        </div>
+        <!--/md-12 --> </div>
+      <!--/row-->
+      <!-- END SECTION 1 -->
+      <!-- START SECTION 2 -->
+      <div class="row">
+        <div class="col-md-12 section innershadow wish1" id="section2">
+          <div class="col-md-1"> </div>
+          <div class="col-md-10">
+            <!-- START SECTION 2 CONTENT -->
+            <h3>Headings</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To create a heading, add number signs (<code>#</code>) in front of
+              a word or phrase. The number of number signs you use should
+              correspond to the heading level. For example, to create a heading
+              level three (<code>&lt;h3&gt;</code>), use three number signs
+              (e.g., <code>### My Header</code>).</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-danger" role="alert" width="1px" align="right"><strong>Failed</strong></td>
+                </tr>
+                <tr>
+                  <td><code> # Heading Level 1<br>
+                      ## Heading Level 2<br>
+                      ### Heading Level 3<br>
+                      #### Heading Level 4<br>
+                      ##### Heading Level 5<br>
+                      ###### Heading Level 6</code></td>
+                  <td>
+                    <h1>Heading level 1</h1>
+                    <h2>Heading level 2</h2>
+                    <h3>Heading level 3</h3>
+                    <h4>Heading level 4</h4>
+                    <h5>Heading level 5</h5>
+                    <h6>Heading level 6</h6>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td colspan="2"><img src="images/mewe-headings.jpg"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
+                MeWe does not insert line breaks after each markdown and removes
+                any line breaks entered after each line.</span> </p>
+            <h3><br>
+              Alternate Syntax</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              Alternatively, on the line below the text, add any number of <code>==</code>
+              characters for heading level 1 or <code>--</code> characters for
+              heading level 2.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-danger" role="alert" width="1px" align="right"><strong>Failed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>Heading Level 1<br>
+                      ============</code></td>
+                  <td>
+                    <h1>Heading Level 1</h1>
+                  </td>
+                  <td colspan="2"><img src="images/alt-1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>Heading Level 2<br>
+                      ------------------------</code></td>
+                  <td>
+                    <h2>Heading Level 2</h2>
+                  </td>
+                  <td colspan="2"><img src="images/alt-2.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Paragraphs</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To create paragraphs, use a blank line to separate one or more
+              lines of text. You may have to hold down Shift while hitting Enter
+              so you don't submit a post accidentally. You should not indent
+              paragraphs with spaces or tabs.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>This is a line of normal text.<br>
+                      <br>
+                      This is another line of perfectly normal text. Nothing out
+                      of the ordinary here.<br>
+                    </code></td>
+                  <td> This is a line of normal text.<br>
+                    <br>
+                    This is another line of perfectly normal text. Nothing out
+                    of the ordinary here. </td>
+                  <td colspan="2"><img src="images/paragraphs.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Emphasis</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              You can add emphasis by making text bold, italic, strikethrough or
+              a combination of each.</p>
+            <p></p>
+            <h3>Bold</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To bold text, add two asterisks or underscores before and after a
+              word or phrase. To bold the middle of a word for emphasis, add two
+              asterisks without spaces around the letters.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>This will be **bold text**.</code></td>
+                  <td>This will be <b>bold text</b>.</td>
+                  <td colspan="2"><img src="images/bold1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This will be __bold text__.</code></td>
+                  <td>This will be <b>bold text</b>.</td>
+                  <td colspan="2"><img src="images/bold2.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This text **right here** will be bold.</code></td>
+                  <td>This text <b>right here</b> will be bold.</td>
+                  <td colspan="2"><img src="images/bold3.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>NoSpaces**ShowsHow**TheyWorkAnywhere.</code></td>
+                  <td>NoSpaces<b>ShowsHow</b>TheyWorkAnywhere.</td>
+                  <td colspan="2"><img src="images/bold4.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <h3>Italic</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To italicize text, add one asterisk or underscore before and after
+              a word or phrase. To italicize the middle of a word for emphasis,
+              add one asterisk without spaces around the letters.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>This will be *italic text*.</code></td>
+                  <td>This will be <i>italic text</i>.</td>
+                  <td colspan="2"><img src="images/italic1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This will be _italic text_.</code></td>
+                  <td>This will be <i>italic text</i>.</td>
+                  <td colspan="2"><img src="images/italic2.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This text *right here* will be italic.</code></td>
+                  <td>This text <i>right here</i> will be italic.</td>
+                  <td colspan="2"><img src="images/italic3.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>NoSpaces*ShowsHow*TheyWorkAnywhere.</code></td>
+                  <td>NoSpaces<i>ShowsHow</i>TheyWorkAnywhere.</td>
+                  <td colspan="2"><img src="images/italic4.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Bold and Italic</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To emphasize text with bold and italics at the same time, add
+              three asterisks or underscores before and after a word or phrase,
+              or any combination of the previous two.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>This will be ***bold and italic text***.</code></td>
+                  <td>This will be <b><i>bold and italic text</i></b>.</td>
+                  <td colspan="2"><img src="images/ba1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This will be ___bold and italic text___.</code></td>
+                  <td>This will be <b><i>bold and italic text</i></b>.</td>
+                  <td colspan="2"><img src="images/ba2.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This will be __*bold and italic text*__.</code></td>
+                  <td>This will be <b><i>bold and italic text</i></b>.</td>
+                  <td colspan="2"><img src="images/ba3.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This will be **_bold and italic text_**.</code></td>
+                  <td>This will be <b><i>bold and italic text</i></b>.</td>
+                  <td colspan="2"><img src="images/ba4.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>This text ***right here*** will be bold and italic.</code></td>
+                  <td>This text <b><i>right here</i></b> will be bold and
+                    italic.</td>
+                  <td colspan="2"><img src="images/ba5.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>NoSpaces***ShowsHow***TheyWorkAnywhere.</code></td>
+                  <td>NoSpaces<b><i>ShowsHow</i></b>TheyWorkAnywhere.</td>
+                  <td colspan="2"><img src="images/ba6.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>NoSpaces___ShowsHow___TheyWorkAnywhere.</code></td>
+                  <td>NoSpaces<b><i>ShowsHow</i></b>TheyWorkAnywhere.</td>
+                  <td colspan="2"><img src="images/ba7.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Strikethrough</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To emphasize text with a strikethrough, add two tildes before and
+              after a word or phrase.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>This will be ~~stricken text~~.</code></td>
+                  <td>This will be <s>stricken text</s>.</td>
+                  <td colspan="2"><img src="images/strike1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>NoSpaces~~ShowsHow~~TheyWorkAnywhere.</code></td>
+                  <td>NoSpaces<s>ShowsHow</s>TheyWorkAnywhere.</td>
+                  <td colspan="2"><img src="images/strike2.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Emphasis with Asterisks</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To produce a literal asterisk or underscore at a position where it
+              would otherwise be used as an emphasis delimiter, you can
+              backslash escape it. If you include more than one asterisk after
+              the break, it will interpret them as bold, italics, etc. depending
+              on how many you use.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>\*this text is surrounded by literal asterisks\*</code></td>
+                  <td>*this text is surrounded by literal asterisks*</td>
+                  <td colspan="2"><img src="images/litast1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>\**this text is surrounded by literal asterisks\**</code></td>
+                  <td><i>*this text is surrounded by literal asterisks*</i></td>
+                  <td colspan="2"><img src="images/litast2.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>\***this text is surrounded by literal asterisks\***</code></td>
+                  <td><b>*this text is surrounded by literal asterisks*</b></td>
+                  <td colspan="2"><img src="images/litast3.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
+                There is no syntax in Markdown for underlining text. It is
+                believed that, since links are underlined, it might cause
+                confusion.</span></p>
+            <p><span class="alert alert-info" role="alert">If <b>MeWe </b>has
+                it's own custom underline Markdown syntax (like Discord, for
+                example), we have yet to discover it.</span> </p>
+            <!-- END SECTION 2 CONTENT --> </div>
+          <div class="col-md-1"> </div>
+        </div>
+      </div>
+      <!-- END SECTION 2 -->
+      <!-- START SECTION 3 -->
+      <div class="row">
+        <div class="col-md-12 section innershadow mirage1" id="section3">
+          <div class="col-md-1"> </div>
+          <div class="col-md-10">
+            <!-- START SECTION 3 CONTENT -->
+            <h1>The Theme</h1>
+            <p class="lead">Make it your own! Be sure to read the README.md file
+              to get started.</p>
+            <div class="row">
+              <div class="col-md-4 square"> <i class="fa fa-paint-brush bigicon"
+                  aria-hidden="true"></i>
+                <h2> 148 Colours </h2>
+                <p class="lead">Choose from 148 different colours.</p>
+                <p>Hand-picked from the <a href="http://uigradients.com">uiGradients</a>
+                  collection.</p>
+              </div>
+              <div class="col-md-4 square"> <i class="fa fa-font-awesome bigicon"
+                  aria-hidden="true"></i>
+                <h2>Icons Included</h2>
+                <p class="lead">Choose from 675 icons in Font Awesome 4.7.0</p>
+                <p>View the complete list of icons <a href="http://fontawesome.io/icons/">here</a>.</p>
+              </div>
+              <div class="col-md-4 square"> <i class="fa fa-mobile bigicon" aria-hidden="true"></i>
+                <h2>100% Responsive</h2>
+                <p class="lead">Built using Bootstrap 3, this template scales to
+                  look beatiful on any size display.</p>
+                <p>Check the README.md document to see how to make your images
+                  responsive.</p>
+              </div>
+            </div>
+            <!--/row -->
+            <h3>Button Colours</h3>
+            <p>Change the mouseover colour of each button using Bootstrap
+              default colours - <code>default</code>, <code>primary</code>, <code>success</code>,
+              <code>info</code>, <code>warning</code> or <code>danger</code>.</p>
+            <a class="btn btn-default btn-lg bigger-btn btn-trans" href="#">Default</a>
+            <a class="btn btn-primary btn-lg bigger-btn btn-trans" href="#">Primary</a>
+            <a class="btn btn-success btn-lg bigger-btn btn-trans" href="#">Success</a>
+            <a class="btn btn-info btn-lg bigger-btn btn-trans" href="#">Info</a>
+            <a class="btn btn-warning btn-lg bigger-btn btn-trans" href="#">Warning</a>
+            <a class="btn btn-danger btn-lg bigger-btn btn-trans" href="#">Danger</a>
+            <h3>Bootstrap Alerts</h3>
+            <p>Use Bootstrap Alerts to draw the user's attention to an important
+              message.</p>
+            <div class="alert alert-success" role="alert"> <strong>Well done!</strong>
+              You successfully read this important alert message. </div>
+            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong>
+              This alert needs your attention, but it's not super important. </div>
+            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong>
+              Better check yourself, you're not looking too good. </div>
+            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong>
+              Change a few things up and try submitting again. </div>
+            <h3>All the Icons!</h3>
+            <p>OnePagers Solid theme comes with <a href="http://fontawesome.io">Fontawesome
+                4.7.0</a> by Dave Gandy.</p>
+            <p>Use any icons from the <a href="http://fontawesome.io/icons/">complete
+                set of 675 icons</a> - go wild! <i class="fa fa-id-card-o" aria-hidden="true"></i>
+              <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+              <i class="fa fa-telegram" aria-hidden="true"></i> <i class="fa fa-handshake-o"
+                aria-hidden="true"></i> <i class="fa fa-beer" aria-hidden="true"></i>
+              <i class="fa fa-cogs" aria-hidden="true"></i> <i class="fa fa-linux"
+                aria-hidden="true"></i> <i class="fa fa-heartbeat" aria-hidden="true"></i>
+              <i class="fa fa-firefox" aria-hidden="true"></i> <i class="fa fa-chrome"
+                aria-hidden="true"></i> <i class="fa fa-industry" aria-hidden="true"></i>
+              <i class="fa fa-lightbulb-o" aria-hidden="true"></i> <i class="fa fa-bug"
+                aria-hidden="true"></i> <i class="fa fa-user-secret" aria-hidden="true"></i>
+            </p>
+            <p>It's as simple as including <code>&lt;i class="fa fa-<b>cogs</b>"
+                aria-hidden="true"&gt;&lt;/i&gt;</code>.</p>
+            <!-- END SECTION 3 CONTENT --> </div>
+          <div class="col-md-1"> </div>
+        </div>
+        <!--/md-12 --> </div>
+      <!--/row-->
+      <!-- END SECTION 3 -->
+      <!-- START SECTION 4 -->
+      <div class="row">
+        <div class="col-md-12 section mirage1" id="section4">
+          <div class="col-md-1"> </div>
+          <div class="col-md-10">
+            <!-- START SECTION 4 CONTENT -->
+            <h1>Contact Us</h1>
+            <p class="lead">This is where you'll put some information about your
+              company.</p>
+            <p class="lead">The section below is split into 2 separate
+              components - you can put your contact details on the left hand
+              side, and a contact form on the right hand side - or anything you
+              choose. Sweet!</p>
+            <p>Make sure you replace the contact form with your own! For
+              instructions, see the README.md document.</p>
+            <div class="row">
+              <div class="col-md-6 contact-left">
+                <!-- START CONTACT DETAILS -->
+                <p><b>Get In Touch</b></p>
+                <p>Phone: 02 9876 5432<br>
+                  Fax: 02 3456 7890</p>
+                <p><b>123 Fake St</b><br>
+                  Sydney NSW 2000</p>
+                <p>Or use the Contact Form to the right... yes, this is a <b>live
+                    contact form</b> - your message will be sent to the theme
+                  developer</p>
+                <p class="small">Make sure you replace this contact form with
+                  your own! We recommend using the free <a href="https://formspree.io/">formspree.io</a>
+                  service.</p>
+                <p class="small">Want to Report a Bug in this template? Visit us
+                  on <a href="https://github.com/haydenryan/OnePagers-solid/issues">github</a>.
+                  <!-- END CONTACT DETAILS --> </p>
+              </div>
+              <div class="col-md-6 contact-right">
+                <!-- START CONTACT FORM -->
+                <form action="https://formspree.io/hayden@gennext.net.au" method="POST">
+                  <div class="form-group"> <label>Your Email</label> <input class="form-control input-lg"
+                      name="_replyto" placeholder="Email" required="" type="email">
+                  </div>
+                  <div class="form-group"> <label>Subject</label> <input class="form-control input-lg"
+                      name="subject" placeholder="Subject" type="text"> </div>
+                  <div class="form-group"> <label>Message</label> <textarea class="form-control input-lg"
+rows="5" cols="10" placeholder="Message" name="message" required=""></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-lg btn-trans"
+                    value="Send">Submit</button> </form>
+                <!--END CONTACT FORM--> </div>
+            </div>
+            <!-- /row -->
+            <!-- END SECTION 4 CONTENT --> </div>
+          <div class="col-md-1"> </div>
+        </div>
+        <!--/md-12 --> </div>
+      <!--/row-->
+      <!--END SECTION 4 -->
+      <div class="row">
+        <div class="col-md-12 footer">
+          <!-- You are free to remove the link back to my website, however you should consider donating to the project on Github :) -->
+          Copyright © 2017 <a href="#">Your Company</a> | <a href="https://haydenryan.github.io/OnePagers-solid/">Solid
+            colour template</a> by <a href="http://gennext.net.au">Hayden Ryan</a>
+        </div>
+      </div>
+    </div>
+    <!--/container final closing tag-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+
+    $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > 200);
+  });
+});
+
+    $('body').scrollspy({ target: '#topnav' })
+
+</script>
+  </body>
+</html>

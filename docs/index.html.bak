@@ -743,11 +743,14 @@
                 <tr>
                   <td><code>
                       <meta http-equiv="content-type" content="text/html; charset=utf-8">
-                      <code>![Click on over to MeWe and try out these codes!](/images/mewelogo256x.png "Join MeWe Today!")</code></td>
-                  <td>Join us at <a href="https://www.mewe.com" target="_blank"><b>MeWe</b></a>
-                    today!</td>
-                  <td colspan="2"><a href="https://www.mewe.com" target="_blank"><img
-                        src="images/link5.png"></a><br>
+                      <code>![Click on over to MeWe and try out these
+                        codes!](/images/mewelogo169x67.png "Join MeWe
+                        Today!")<br>
+                      </code></code></td>
+                  <td><img src="images/mewelogo256x.png" alt="Click on over to MeWe and try out these codes!"
+                      title="Join MeWe Today!"><br>
+                  </td>
+                  <td colspan="2"><br>
                   </td>
                 </tr>
                 <tr>

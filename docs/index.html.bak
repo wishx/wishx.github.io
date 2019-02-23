@@ -87,8 +87,8 @@
                 target="_blank"><b>Dark Reader</b></a> activated.</p>
             <p>If you have a suggestion or found a markdown syntax that works
               but isn't listed, please let me know.</p>
-            <p>Scroll down for the latest markdown syntax comparisons. Thank you
-              and enjoy!</p>
+            <p>Scroll down for the latest markdown syntax comparisons. It's a
+              lot, so grab a beverage and get comfy. Thank you and enjoy!</p>
             <!-- END SECTION 1 CONTENT --> </div>
           <div class="col-md-1"> </div>
         </div>
@@ -403,7 +403,8 @@
                 confusion.</span></p>
             <p><span class="alert alert-info" role="alert">If <b>MeWe </b>has
                 it's own custom underline Markdown syntax (like Discord, for
-                example), we have yet to discover it.</span> </p><br>
+                example), we have yet to discover it.</span> </p>
+            <br>
             <h3>Emphasis with Asterisks</h3>
             <p> To produce a literal asterisk or underscore at a position where
               it would otherwise be used as an emphasis delimiter, you can
@@ -531,8 +532,12 @@
                   </td>
                 </tr>
               </tbody>
-            </table><br>
-            <p><span class="alert alert-warning" role="alert"><b>Note: </b>You cannot escape out of pound signs. They will automatically become hashtags if they are directly against text.</span></p><br>
+            </table>
+            <br>
+            <p><span class="alert alert-warning" role="alert"><b>Note: </b>You
+                cannot escape out of pound signs. They will automatically become
+                hashtags if they are directly against text.</span></p>
+            <br>
             <h3>Horizontal Rules</h3>
             <p>
               <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -699,6 +704,46 @@
                 </tr>
                 <tr>
                   <td><code>Join us at **[MeWe](https://www.mewe.com)** today!</code></td>
+                  <td>Join us at <a href="https://www.mewe.com" target="_blank"><b>MeWe</b></a>
+                    today!</td>
+                  <td colspan="2"><a href="https://www.mewe.com" target="_blank"><img
+                        src="images/link5.png"></a><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>Have you been on *[Reddit](https://www.reddit.com)*
+                      lately?</code></td>
+                  <td>Have you been on <a href="https://www.reddit.com" target="_blank"><i>Reddit</i></a>
+                    lately?</td>
+                  <td colspan="2"><a href="https://www.reddit.com" target="_blank"><img
+                        src="images/link6.png"></a><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Images</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To add an image, add an exclamation mark (<code>!</code>),
+              followed by alt text in brackets, and the path or URL to the image
+              asset in parentheses. You can optionally add a title after the URL
+              in the parentheses.</p>
+            <p></p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>
+                      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+                      <code>![Click on over to MeWe and try out these codes!](/images/mewelogo256x.png "Join MeWe Today!")</code></td>
                   <td>Join us at <a href="https://www.mewe.com" target="_blank"><b>MeWe</b></a>
                     today!</td>
                   <td colspan="2"><a href="https://www.mewe.com" target="_blank"><img

@@ -396,6 +396,14 @@
                 </tr>
               </tbody>
             </table>
+            <br>
+            <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
+                There is no syntax in Markdown for underlining text. It is
+                believed that, since links are underlined, it might cause
+                confusion.</span></p>
+            <p><span class="alert alert-info" role="alert">If <b>MeWe </b>has
+                it's own custom underline Markdown syntax (like Discord, for
+                example), we have yet to discover it.</span> </p><br>
             <h3>Emphasis with Asterisks</h3>
             <p> To produce a literal asterisk or underscore at a position where
               it would otherwise be used as an emphasis delimiter, you can
@@ -433,14 +441,136 @@
                 </tr>
               </tbody>
             </table>
-            <br>
-            <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
-                There is no syntax in Markdown for underlining text. It is
-                believed that, since links are underlined, it might cause
-                confusion.</span></p>
-            <p><span class="alert alert-info" role="alert">If <b>MeWe </b>has
-                it's own custom underline Markdown syntax (like Discord, for
-                example), we have yet to discover it.</span> </p>
+            <h3>Characters You Can Escape</h3>
+            <p>To display a literal character that would otherwise be used to
+              format text in a Markdown document, add a backslash (<code>\</code>)
+              in front of the character. Since we just did this with asterisks,
+              here is a list of other characters you can use a backslash to
+              escape.</p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Character</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Name</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output
+                      When Escaped<br>
+                    </strong></td>
+                  <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>\</code></td>
+                  <td>backslash</td>
+                  <td colspan="2"><img src="images/esc1.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>`</code></td>
+                  <td>tick mark</td>
+                  <td colspan="2"><img src="images/esc2.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>*</code></td>
+                  <td>asterisk</td>
+                  <td colspan="2"><img src="images/esc3.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>_</code></td>
+                  <td>underscore</td>
+                  <td colspan="2"><img src="images/esc4.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>{}</code></td>
+                  <td>curly brackets</td>
+                  <td colspan="2"><img src="images/esc5.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>[]</code></td>
+                  <td>brackets</td>
+                  <td colspan="2"><img src="images/esc6.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>()</code></td>
+                  <td>parentheses</td>
+                  <td colspan="2"><img src="images/esc7.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>#</code></td>
+                  <td>pound sign</td>
+                  <td colspan="2"><img src="images/esc8.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>+</code></td>
+                  <td>plus sign</td>
+                  <td colspan="2"><img src="images/esc9.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>-</code></td>
+                  <td>minus sign</td>
+                  <td colspan="2"><img src="images/esc10.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>.</code></td>
+                  <td>dot or period</td>
+                  <td colspan="2"><img src="images/esc11.png"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>!</code></td>
+                  <td>exclamation mark</td>
+                  <td colspan="2"><img src="images/esc12.png"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table><br>
+            <p><span class="alert alert-warning" role="alert"><b>Note: </b>You cannot escape out of pound signs. They will automatically become hashtags if they are directly against text.</span></p><br>
+            <h3>Horizontal Rules</h3>
+            <p>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8">
+              To create a horizontal rule, use three or more asterisks (<code>***</code>),
+              dashes (<code>---</code>), or underscores (<code>___</code>) on a
+              line by themselves.</p>
+            <p></p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>***</code></td>
+                  <td>
+                    <hr width="90%"></td>
+                  <td colspan="2"><img src="images/hr1.png"></td>
+                </tr>
+                <tr>
+                  <td><code>---</code></td>
+                  <td>
+                    <hr width="90%"></td>
+                  <td colspan="2"><img src="images/hr1.png"></td>
+                </tr>
+                <tr>
+                  <td><code>___</code></td>
+                  <td>
+                    <hr width="90%"></td>
+                  <td colspan="2"><img src="images/hr1.png"></td>
+                </tr>
+              </tbody>
+            </table>
             <h3>Links</h3>
             <p>
               <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -572,15 +702,16 @@
                   <td>Join us at <a href="https://www.mewe.com" target="_blank"><b>MeWe</b></a>
                     today!</td>
                   <td colspan="2"><a href="https://www.mewe.com" target="_blank"><img
-                        src="images/link3.png"></a><br>
+                        src="images/link5.png"></a><br>
                   </td>
                 </tr>
-               <tr>
-                  <td><code>Have you been on *[Reddit](https://www.reddit.com)* lately?</code></td>
+                <tr>
+                  <td><code>Have you been on *[Reddit](https://www.reddit.com)*
+                      lately?</code></td>
                   <td>Have you been on <a href="https://www.reddit.com" target="_blank"><i>Reddit</i></a>
                     lately?</td>
                   <td colspan="2"><a href="https://www.reddit.com" target="_blank"><img
-                        src="images/link3.png"></a><br>
+                        src="images/link6.png"></a><br>
                   </td>
                 </tr>
               </tbody>

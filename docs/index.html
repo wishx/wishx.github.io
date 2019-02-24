@@ -618,6 +618,125 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3>Blockquotes</h3>
+                    <p>To create a blockquote, add a <code>></code> in front of a paragraph. MeWe places a gray bar in front of anything in blockquotes.</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>> This is a little bit of text in a blockquote.</code></td>
+                                <td>
+                                    <code bgcolor="#17181C" color="white">> This is a little bit of text in a blockquote.</code>
+                                </td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/bq1.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <h3>Blockquotes with Multiple Paragraphs</h3>
+                    <p>Blockquotes can contain multiple paragraphs. Add a <code>></code> on the blank line between the paragraphs.</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>> This is a little bit of text in a blockquote.<br>
+                                    > Some more text down here, too.<br>
+                                    ><br>
+                                    > We skipped a line there, didn't we?</code></td>
+                                <td><blockquote>This is a little bit of text in a blockquote.<br><br>
+                                    Some more text down here, too.<br><br>
+                                    <br>
+                                    We skipped a line there, didn't we?</blockquote></td>
+                                  <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/bq2.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <h3>Blockquotes with Other Elements</h3>
+                    <p>Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>> **This is a some bold text in a blockquote.**<br>
+                                    ><br>
+                                    > - And a list item, too!<br>
+                                    > - And another one! Wow!<br>
+                                    ><br>
+                                    ><br>
+                                    > Then we skipped *two* lines! ***Crazy!***</code></td>
+                                <td><blockquote><b>This is a some bold text in a blockquote.</b><br><br>
+                                    <ul>
+                                        <li>And a list item, too!</li>
+                                        <li>And another one! Wow!</li></ul>
+                                    <br><br>
+                                    Then we skipped <i>two</i> lines! <b><i>Crazy!</i></b></blockquote></td>
+                                  <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/bq4.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                      <h3>Nested Blockquotes</h3>
+                    <p>Blockquotes can be nested. Add a <code>>></code> in front of the paragraph you want to nest.</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>> This is a little bit of text in a blockquote.<br>
+                                    > Some more text down here, too.<br>
+                                    ><br>
+                                    >> Let's tuck this line in here<br>
+                                    ><br>
+                                    > We skipped a line there, didn't we?</code></td>
+                                <td><blockquote>This is a little bit of text in a blockquote.<br><br>
+                                    Some more text down here, too.<br><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Let's tuck this line in here<br><br>
+                                    We skipped a line there, didn't we?</blockquote></td>
+                                  <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/bq3.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <h3>Lists</h3>
                     <p>You can organize items into ordered and unordered lists.</p>
                     <p></p>
@@ -636,7 +755,8 @@
                                 <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
                             </tr>
                             <tr>
-                                <td><code>1. First item<br>
+                                <td>
+                                    <code>1. First item<br>
                                         2. Second item<br>
                                         3. Third item<br>
                                         4. Fourth item </code></td>
@@ -842,7 +962,8 @@
                                         I want!</code></td>
                                 <td>I can <a href="https://www.google.com" target="_blank">put
                                         a link</a> anywhere I want!</td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank"><img src="images/link2.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank"><img src="images/link2.png"></a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -867,7 +988,8 @@
                                 <td><code>[This is a link to MeWe!](https://www.mewe.com)</code></td>
                                 <td><a href="https://www.mewe.com" target="_blank">This is a
                                         link to MeWe!</a></td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link1.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link1.png"></a></div>
                                 </td>
                             </tr>
                             <tr>
@@ -875,7 +997,8 @@
                                         I want!</code></td>
                                 <td>I can <a href="https://www.google.com" target="_blank">put
                                         a link</a> anywhere I want!</td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank"><img src="images/link2.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank"><img src="images/link2.png"></a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -904,7 +1027,8 @@
                                         MeWe!")</code></td>
                                 <td><a href="https://www.mewe.com" target="_blank" title="Join MeWe!">This
                                         is a link to MeWe!</a></td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank" title="Join MeWe!"><img src="images/link1.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank" title="Join MeWe!"><img src="images/link1.png"></a></div>
                                 </td>
                             </tr>
                             <tr>
@@ -912,7 +1036,8 @@
                                         I want!</code></td>
                                 <td>I can <a href="https://www.google.com" target="_blank" title="It's Google!">put
                                         a link</a> anywhere I want!</td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank" title="It's Google!"><img src="images/link2.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank" title="It's Google!"><img src="images/link2.png"></a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -937,13 +1062,15 @@
                             <tr>
                                 <td><code>&lt;https://www.mewe.com&gt;</code></td>
                                 <td><a href="https://www.mewe.com" target="_blank">https://www.mewe.com</a></td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link3.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link3.png"></a></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td><code>&lt;nobody@nowhere.com&gt;</code></td>
                                 <td><a href="mailto:nobody@nowhere.com">nobody@nowhere.com</a></td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="mailto:nobody@nowhere.com" target="_blank"><img src="images/link4.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="mailto:nobody@nowhere.com" target="_blank"><img src="images/link4.png"></a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -969,7 +1096,8 @@
                                 <td><code>Join us at **[MeWe](https://www.mewe.com)** today!</code></td>
                                 <td>Join us at <a href="https://www.mewe.com" target="_blank"><b>MeWe</b></a>
                                     today!</td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link5.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link5.png"></a></div>
                                 </td>
                             </tr>
                             <tr>
@@ -977,7 +1105,8 @@
                                         lately?</code></td>
                                 <td>Have you been on <a href="https://www.reddit.com" target="_blank"><i>Reddit</i></a>
                                     lately?</td>
-                                <td colspan="2"><div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.reddit.com" target="_blank"><img src="images/link6.png"></a></div>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.reddit.com" target="_blank"><img src="images/link6.png"></a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1008,7 +1137,9 @@
                                         codes!](/images/mewelogo169x67.png "Join MeWe Today!")</code></td>
                                 <td><img src="images/mewelogo169x67.png" alt="Click on over to MeWe and try out these codes!" title="Join MeWe Today!"><br>
                                 </td>
-                                <td colspan="2"><div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><img src="images/imagefail1.png"></div></td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><img src="images/imagefail1.png"></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

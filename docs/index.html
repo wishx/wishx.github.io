@@ -49,7 +49,7 @@
             <h1>MeWe Markdown Usage Guide</h1>
             <br>
             <p class="lead">Greetings and welcome to the <i>MeWe Markdown Usage
-                Guide</i>.</p>
+                Guide (MMUG)</i>.</p>
             <span class="btnversion">Latest Version: 0.5alpha - Last Update: 21
               Feb, 2019</span>
             <p><span class="alert alert-danger" role="alert"> <strong>This
@@ -546,9 +546,7 @@
                 hashtags if they are directly against text.</span></p>
             <br>
             <h3>Horizontal Rules</h3>
-            <p>
-              <meta http-equiv="content-type" content="text/html; charset=utf-8">
-              To create a horizontal rule, use three or more asterisks (<code>***</code>),
+            <p>To create a horizontal rule, use three or more asterisks (<code>***</code>),
               dashes (<code>---</code>), or underscores (<code>___</code>) on a
               line by themselves.</p>
             <p></p>
@@ -583,10 +581,221 @@
                 </tr>
               </tbody>
             </table>
+            <h3>Lists</h3>
+            <p>You can organize items into ordered and unordered lists.</p>
+            <p></p>
+            <h3>Ordered Lists</h3>
+            <p>To create an ordered list, add line items with numbers followed
+              by periods. The numbers don’t have to be in numerical order, but
+              the list should start with the number one.</p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>1. First item<br>
+                      2. Second item<br>
+                      3. Third item<br>
+                      4. Fourth item </code></td>
+                  <td>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ol>
+                  </td>
+                  <td colspan="2"><img src="images/ordlist1.png"></td>
+                </tr>
+                <tr>
+                  <td><code>1. First item<br>
+                      1. Second item<br>
+                      1. Third item<br>
+                      1. Fourth item </code></td>
+                  <td>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ol>
+                  </td>
+                  <td colspan="2"><img src="images/ordlist2.png"></td>
+                </tr>
+                <tr>
+                  <td><code>1. First item<br>
+                      8. Second item<br>
+                      3. Third item<br>
+                      5. Fourth item </code></td>
+                  <td>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ol>
+                  </td>
+                  <td colspan="2"><img src="images/ordlist3.png"></td>
+                </tr>
+                <tr>
+                  <td><code>1. First item<br>
+                      2. Second item<br>
+                      3. Third item<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;1. Indented Item<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;2. Indented Item<br>
+                      4. Fourth item </code></td>
+                  <td>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <ol>
+                        <li>Indented item</li>
+                        <li>Indented item</li>
+                      </ol>
+                      <li>Fourth item</li>
+                    </ol>
+                  </td>
+                  <td colspan="2"><img src="images/ordlist4.png"></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p><span class="alert alert-warning" role="alert"><b>Note: </b>TAB
+                doesn't work in the MeWe editor, hence no indentation. Spaces
+                used instead are parsed out.</span></p>
+            <br>
+            <h3>Unordered Lists (or Bullet Points)</h3>
+            <p>To create an unordered list, add dashes (<code>-</code>),
+              asterisks (<code>*</code>), or plus signs (<code>+</code>) in
+              front of line items. <s>Indent one or more items to create a
+                nested list.</s> See note below.</p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>- First item<br>
+                      - Second item<br>
+                      - Third item<br>
+                      - Fourth item </code></td>
+                  <td>
+                    <ul>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ul>
+                  </td>
+                  <td colspan="2"><img src="images/unord1.png"></td>
+                </tr>
+                <tr>
+                  <td><code>* First item<br>
+                      * Second item<br>
+                      * Third item<br>
+                      * Fourth item </code></td>
+                  <td>
+                    <ul>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ul>
+                  </td>
+                  <td colspan="2"><img src="images/unord2.png"></td>
+                </tr>
+                <tr>
+                  <td><code>+ First item<br>
+                      * Second item<br>
+                      - Third item<br>
+                      + Fourth item </code></td>
+                  <td>
+                    <ul>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ul>
+                  </td>
+                  <td colspan="2"><img src="images/unord3.png"></td>
+                </tr>
+                <tr>
+                  <td><code>- First item<br>
+                      - Second item<br>
+                      - Third item<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;- Indented Item<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;- Indented Item<br>
+                      - Fourth item </code></td>
+                  <td>
+                    <ul>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <ul>
+                        <li>Indented item</li>
+                        <li>Indented item</li>
+                      </ul>
+                      <li>Fourth item</li>
+                    </ul>
+                  </td>
+                  <td colspan="2"><img src="images/unord4.png"></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p><span class="alert alert-warning" role="alert"><b>Note: </b>TAB
+                doesn't work in the MeWe editor, hence no indentation. Spaces
+                used instead are parsed out.</span></p>
+            <br>
             <h3>Links</h3>
-            <p>
-              <meta http-equiv="content-type" content="text/html; charset=utf-8">
-              To create a link, enclose the link text in brackets (e.g., <code>[Duck
+            <p> To create a link, enclose the link text in brackets (e.g., <code>[DuckDuckGo]</code>)
+              and then follow it immediately with the URL in parentheses (e.g.,
+              <code>(https://duckduckgo.com)</code>).</p>
+            <p></p>
+            <p></p>
+            <table style="width: 100%" border="1">
+              <tbody>
+                <tr>
+                  <td class="alert alert-info" role="alert"><strong>Markdown
+                      Text</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>Expected
+                      Output</strong></td>
+                  <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                  <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                </tr>
+                <tr>
+                  <td><code>[This is a link to MeWe!](https://www.mewe.com)</code></td>
+                  <td><a href="https://www.mewe.com" target="_blank">This is a
+                      link to MeWe!</a></td>
+                  <td colspan="2"><a href="https://www.mewe.com" target="_blank"><img
+                        src="images/link1.png"></a><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>I can [put a link](https://www.google.com) anywhere
+                      I want!</code></td>
+                  <td>I can <a href="https://www.google.com" target="_blank">put
+                      a link</a> anywhere I want!</td>
+                  <td colspan="2"><a href="https://www.google.com" target="_blank"><img
+                        src="images/link2.png"></a><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Links</h3>
+            <p> To create a link, enclose the link text in brackets (e.g., <code>[Duck
                 Duck Go]</code>) and then follow it immediately with the URL in
               parentheses (e.g., <code>(https://duckduckgo.com)</code>).</p>
             <p></p>
@@ -765,82 +974,15 @@
       </div>
       <!-- END SECTION 2 -->
       <!-- START SECTION 3 -->
-<!--      <div class="row">
-        <div class="col-md-12 section innershadow mirage1" id="section3">
-          <div class="col-md-1"> </div>
-          <div class="col-md-10">
-            <!-- START SECTION 3 CONTENT -->
-   <!--         <h1>The Theme</h1>
-            <p class="lead">Make it your own! Be sure to read the README.md file
-              to get started.</p>
-            <div class="row">
-              <div class="col-md-4 square"> <i class="fa fa-paint-brush bigicon"
-                  aria-hidden="true"></i>
-                <h2> 148 Colours </h2>
-                <p class="lead">Choose from 148 different colours.</p>
-                <p>Hand-picked from the <a href="http://uigradients.com">uiGradients</a>
-                  collection.</p>
-              </div>
-              <div class="col-md-4 square"> <i class="fa fa-font-awesome bigicon"
-                  aria-hidden="true"></i>
-                <h2>Icons Included</h2>
-                <p class="lead">Choose from 675 icons in Font Awesome 4.7.0</p>
-                <p>View the complete list of icons <a href="http://fontawesome.io/icons/">here</a>.</p>
-              </div>
-              <div class="col-md-4 square"> <i class="fa fa-mobile bigicon" aria-hidden="true"></i>
-                <h2>100% Responsive</h2>
-                <p class="lead">Built using Bootstrap 3, this template scales to
-                  look beatiful on any size display.</p>
-                <p>Check the README.md document to see how to make your images
-                  responsive.</p>
-              </div>
-            </div>
-            <!--/row -->
-   <!--         <h3>Button Colours</h3>
-            <p>Change the mouseover colour of each button using Bootstrap
-              default colours - <code>default</code>, <code>primary</code>, <code>success</code>,
-              <code>info</code>, <code>warning</code> or <code>danger</code>.</p>
-            <a class="btn btn-default btn-lg bigger-btn btn-trans" href="#">Default</a>
-            <a class="btn btn-primary btn-lg bigger-btn btn-trans" href="#">Primary</a>
-            <a class="btn btn-success btn-lg bigger-btn btn-trans" href="#">Success</a>
-            <a class="btn btn-info btn-lg bigger-btn btn-trans" href="#">Info</a>
-            <a class="btn btn-warning btn-lg bigger-btn btn-trans" href="#">Warning</a>
-            <a class="btn btn-danger btn-lg bigger-btn btn-trans" href="#">Danger</a>
-            <h3>Bootstrap Alerts</h3>
-            <p>Use Bootstrap Alerts to draw the user's attention to an important
-              message.</p>
-            <div class="alert alert-success" role="alert"> <strong>Well done!</strong>
-              You successfully read this important alert message. </div>
-            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong>
-              This alert needs your attention, but it's not super important. </div>
-            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong>
-              Better check yourself, you're not looking too good. </div>
-            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong>
-              Change a few things up and try submitting again. </div>
-            <h3>All the Icons!</h3>
-            <p>OnePagers Solid theme comes with <a href="http://fontawesome.io">Fontawesome
-                4.7.0</a> by Dave Gandy.</p>
-            <p>Use any icons from the <a href="http://fontawesome.io/icons/">complete
-                set of 675 icons</a> - go wild! <i class="fa fa-id-card-o" aria-hidden="true"></i>
-              <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
-              <i class="fa fa-telegram" aria-hidden="true"></i> <i class="fa fa-handshake-o"
-                aria-hidden="true"></i> <i class="fa fa-beer" aria-hidden="true"></i>
-              <i class="fa fa-cogs" aria-hidden="true"></i> <i class="fa fa-linux"
-                aria-hidden="true"></i> <i class="fa fa-heartbeat" aria-hidden="true"></i>
-              <i class="fa fa-firefox" aria-hidden="true"></i> <i class="fa fa-chrome"
-                aria-hidden="true"></i> <i class="fa fa-industry" aria-hidden="true"></i>
-              <i class="fa fa-lightbulb-o" aria-hidden="true"></i> <i class="fa fa-minus-square"
-                aria-hidden="true"></i> <i class="fa fa-user-secret" aria-hidden="true"></i>
-              <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-times"
-                aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true"></i></p>
-            <p>It's as simple as including <code>&lt;i class="fa fa-<b>cogs</b>"
-                aria-hidden="true"&gt;&lt;/i&gt;</code>.</p>
-            <!-- END SECTION 3 CONTENT --> 
- <!--   </div>
-          <div class="col-md-1"> </div>
-        </div>
-        <!--/md-12 --> 
-  <!--  </div>
+      <!--      <div class="row">
+        <div class="col-md-12 section innershadow mirage1" id="section3">          <div class="col-md-1"> </div>          <div class="col-md-10">            <!-- START SECTION 3 CONTENT -->
+      <!--         <h1>The Theme</h1>
+            <p class="lead">Make it your own! Be sure to read the README.md file              to get started.</p>            <div class="row">              <div class="col-md-4 square"> <i class="fa fa-paint-brush bigicon"                  aria-hidden="true"></i>                <h2> 148 Colours </h2>                <p class="lead">Choose from 148 different colours.</p>                <p>Hand-picked from the <a href="http://uigradients.com">uiGradients</a>                  collection.</p>              </div>              <div class="col-md-4 square"> <i class="fa fa-font-awesome bigicon"                  aria-hidden="true"></i>                <h2>Icons Included</h2>                <p class="lead">Choose from 675 icons in Font Awesome 4.7.0</p>                <p>View the complete list of icons <a href="http://fontawesome.io/icons/">here</a>.</p>              </div>              <div class="col-md-4 square"> <i class="fa fa-mobile bigicon" aria-hidden="true"></i>                <h2>100% Responsive</h2>                <p class="lead">Built using Bootstrap 3, this template scales to                  look beatiful on any size display.</p>                <p>Check the README.md document to see how to make your images                  responsive.</p>              </div>            </div>            <!--/row -->
+      <!--         <h3>Button Colours</h3>
+            <p>Change the mouseover colour of each button using Bootstrap              default colours - <code>default</code>, <code>primary</code>, <code>success</code>,              <code>info</code>, <code>warning</code> or <code>danger</code>.</p>            <a class="btn btn-default btn-lg bigger-btn btn-trans" href="#">Default</a>            <a class="btn btn-primary btn-lg bigger-btn btn-trans" href="#">Primary</a>            <a class="btn btn-success btn-lg bigger-btn btn-trans" href="#">Success</a>            <a class="btn btn-info btn-lg bigger-btn btn-trans" href="#">Info</a>            <a class="btn btn-warning btn-lg bigger-btn btn-trans" href="#">Warning</a>            <a class="btn btn-danger btn-lg bigger-btn btn-trans" href="#">Danger</a>            <h3>Bootstrap Alerts</h3>            <p>Use Bootstrap Alerts to draw the user's attention to an important              message.</p>            <div class="alert alert-success" role="alert"> <strong>Well done!</strong>              You successfully read this important alert message. </div>            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong>              This alert needs your attention, but it's not super important. </div>            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong>              Better check yourself, you're not looking too good. </div>            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong>              Change a few things up and try submitting again. </div>            <h3>All the Icons!</h3>            <p>OnePagers Solid theme comes with <a href="http://fontawesome.io">Fontawesome                4.7.0</a> by Dave Gandy.</p>            <p>Use any icons from the <a href="http://fontawesome.io/icons/">complete                set of 675 icons</a> - go wild! <i class="fa fa-id-card-o" aria-hidden="true"></i>              <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>              <i class="fa fa-telegram" aria-hidden="true"></i> <i class="fa fa-handshake-o"                aria-hidden="true"></i> <i class="fa fa-beer" aria-hidden="true"></i>              <i class="fa fa-cogs" aria-hidden="true"></i> <i class="fa fa-linux"                aria-hidden="true"></i> <i class="fa fa-heartbeat" aria-hidden="true"></i>              <i class="fa fa-firefox" aria-hidden="true"></i> <i class="fa fa-chrome"                aria-hidden="true"></i> <i class="fa fa-industry" aria-hidden="true"></i>              <i class="fa fa-lightbulb-o" aria-hidden="true"></i> <i class="fa fa-minus-square"                aria-hidden="true"></i> <i class="fa fa-user-secret" aria-hidden="true"></i>              <i class="fa fa-check-square" aria-hidden="true"></i> <i class="fa fa-times"                aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true"></i></p>            <p>It's as simple as including <code>&lt;i class="fa fa-<b>cogs</b>"                aria-hidden="true"&gt;&lt;/i&gt;</code>.</p>            <!-- END SECTION 3 CONTENT -->
+      <!--   </div>
+          <div class="col-md-1"> </div>        </div>        <!--/md-12 -->
+      <!--  </div>
       <!--/row-->
       <!-- END SECTION 3 -->
       <!-- START SECTION 4 -->

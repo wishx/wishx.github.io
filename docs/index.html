@@ -33,7 +33,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#section1">Home</a></li>
-                    <li><a href="#section3">The Theme</a></li>
+                    <li><a href="#section2">The Guide</a></li>
                     <li><a href="#section4">Contact Us</a></li>
                 </ul>
             </div>
@@ -52,17 +52,17 @@
                     <p class="lead">Greetings and welcome to the <i>MeWe Markdown Usage
                             Guide (MMUG)</i>.</p>
                     <span class="btnversion">Latest Version: 0.5alpha - Last Update: 21
-                        Feb, 2019</span>
-                    <p><span class="alert alert-danger" role="alert"> <strong>This
-                                guide is incomplete and still very much a work in progress!
-                                This is an alpha test site!</strong> </span></p>
+                        Feb, 2019</span><br>
+                    <div class="alert alert-danger" role="alert"> <strong>This
+                            guide is incomplete and still very much a work in progress!
+                            This is an alpha test site!</strong></div>
                     <p>In lieu of an official <strong>MeWe</strong> markdown guide of
                         any kind, I have attempted to consolidate everything we <strong>MeWe</strong>
                         users know about how <strong>MeWe</strong> interprets the
                         Markdown language.</p>
-                    <p><span class="alert alert-warning" role="alert"> <strong>Note:</strong>
-                            This is an unnoficial <b>MeWe</b> guide and is not directly
-                            affiliated with <b>MeWe</b> in any way.</span></p>
+                    <div class="alert alert-warning" role="alert"> <strong>Note:</strong>
+                        This is an unnoficial <b>MeWe</b> guide and is not directly
+                        affiliated with <b>MeWe</b> in any way.</div>
                     <p>This guide is a compilation of the well-known <strong><a href="https://sproutsluckycorner.wordpress.com/2018/05/21/mewe-markup-guide/" target="_blank">MeWe markup guide</a></strong> by <strong>Dandelion
                             Sprout</strong>, the trial-and-error work of <strong><a href="https://mewe.com/profile/5bc7f3481870d9076e89b6b9" target="_blank">Fritigern Gothly</a></strong> on <strong>MeWe</strong>
                         (which uses <strong>Adam Pritchard</strong>'s <strong><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> </strong>as a base
@@ -150,9 +150,9 @@
                         </tbody>
                     </table>
                     <br>
-                    <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
-                            MeWe does not insert line breaks after each markdown and removes
-                            line breaks after each line.</span> </p>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>
+                        MeWe does not insert line breaks after each markdown and removes
+                        line breaks after each line.</div>
                     <h3><br>
                         Alternate Syntax</h3>
                     <p> Alternatively, on the line below the text, add any number of <code>==</code>
@@ -418,12 +418,12 @@
                         </tbody>
                     </table>
                     <br>
-                    <p> <span class="alert alert-warning" role="alert"><strong>Note:</strong>
-                            There is no syntax in Markdown for underlining text. This was
-                            intention to eliminate confusion with links.</span></p>
-                    <p><span class="alert alert-info" role="alert">If <b>MeWe </b>has
-                            it's own custom underline Markdown syntax (like Discord, for
-                            example), we have yet to discover it.</span> </p>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>
+                        There is no syntax in Markdown for underlining text. This was
+                        intention to eliminate confusion with links.</div>
+                    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle" aria-hidden="true"></i> If <b>MeWe </b>has
+                        it's own custom underline Markdown syntax (like Discord, for
+                        example), we have yet to discover it.</div>
                     <br>
                     <h3>Emphasis with Asterisks</h3>
                     <p> To produce a literal asterisk or underscore at a position where
@@ -569,14 +569,14 @@
                         </tbody>
                     </table>
                     <br>
-                    <p><span class="alert alert-warning" role="alert"><b>Note: </b>You
-                            cannot escape out of pound signs. They will automatically become
-                            hashtags if they are directly against text.</span></p>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>You
+                        cannot escape out of pound signs. They will automatically become
+                        hashtags if they are directly against text.</div>
                     <br>
                     <h3>Horizontal Rules</h3>
                     <p>To create a horizontal rule, use three or more asterisks (<code>***</code>),
                         dashes (<code>---</code>), or underscores (<code>___</code>) on a
-                        line by themselves.</p>
+                        line by themselves. Spaces can be used as long no other characters are anywhere on the same line.</p>
                     <p></p>
                     <p></p>
                     <table style="width: 100%" border="1">
@@ -616,6 +616,15 @@
                                     <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/hr1.png"></div>
                                 </td>
                             </tr>
+                            <tr>
+                                <td><code>_ _ _</code></td>
+                                <td>
+                                    <hr width="90%">
+                                </td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/hr1.png"></div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <h3>Blockquotes</h3>
@@ -643,7 +652,7 @@
                             </tr>
                         </tbody>
                     </table>
-                     <h3>Blockquotes with Multiple Paragraphs</h3>
+                    <h3>Blockquotes with Multiple Paragraphs</h3>
                     <p>Blockquotes can contain multiple paragraphs. Add a <code>></code> on the blank line between the paragraphs.</p>
                     <p></p>
                     <p></p>
@@ -659,20 +668,22 @@
                             </tr>
                             <tr>
                                 <td><code>> This is a little bit of text in a blockquote.<br>
-                                    > Some more text down here, too.<br>
-                                    ><br>
-                                    > We skipped a line there, didn't we?</code></td>
-                                <td><blockquote>This is a little bit of text in a blockquote.<br><br>
-                                    Some more text down here, too.<br><br>
-                                    <br>
-                                    We skipped a line there, didn't we?</blockquote></td>
-                                  <td colspan="2">
+                                        > Some more text down here, too.<br>
+                                        ><br>
+                                        > We skipped a line there, didn't we?</code></td>
+                                <td>
+                                    <blockquote>This is a little bit of text in a blockquote.<br><br>
+                                        Some more text down here, too.<br><br>
+                                        <br>
+                                        We skipped a line there, didn't we?</blockquote>
+                                </td>
+                                <td colspan="2">
                                     <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/bq2.png"></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                     <h3>Blockquotes with Other Elements</h3>
+                    <h3>Blockquotes with Other Elements</h3>
                     <p>Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.</p>
                     <p></p>
                     <p></p>
@@ -688,25 +699,29 @@
                             </tr>
                             <tr>
                                 <td><code>> **This is a some bold text in a blockquote.**<br>
-                                    ><br>
-                                    > - And a list item, too!<br>
-                                    > - And another one! Wow!<br>
-                                    ><br>
-                                    ><br>
-                                    > Then we skipped *two* lines! ***Crazy!***</code></td>
-                                <td><blockquote><b>This is a some bold text in a blockquote.</b><br><br>
-                                    <ul>
-                                        <li>And a list item, too!</li>
-                                        <li>And another one! Wow!</li></ul>
-                                    <br><br>
-                                    Then we skipped <i>two</i> lines! <b><i>Crazy!</i></b></blockquote></td>
-                                  <td colspan="2">
+                                        ><br>
+                                        > - And a list item, too!<br>
+                                        > - And another one! Wow!<br>
+                                        ><br>
+                                        ><br>
+                                        > Then we skipped *two* lines! ***Crazy!***</code></td>
+                                <td>
+                                    <blockquote><b>This is a some bold text in a blockquote.</b><br><br>
+                                        <ul>
+                                            <li>And a list item, too!</li>
+                                            <li>And another one! Wow!</li>
+                                        </ul>
+                                        <br><br>
+                                        Then we skipped <i>two</i> lines! <b><i>Crazy!</i></b>
+                                    </blockquote>
+                                </td>
+                                <td colspan="2">
                                     <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/bq4.png"></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                      <h3>Nested Blockquotes</h3>
+                    <h3>Nested Blockquotes</h3>
                     <p>Blockquotes can be nested. Add a <code>>></code> in front of the paragraph you want to nest.</p>
                     <p></p>
                     <p></p>
@@ -722,16 +737,18 @@
                             </tr>
                             <tr>
                                 <td><code>> This is a little bit of text in a blockquote.<br>
-                                    > Some more text down here, too.<br>
-                                    ><br>
-                                    >> Let's tuck this line in here<br>
-                                    ><br>
-                                    > We skipped a line there, didn't we?</code></td>
-                                <td><blockquote>This is a little bit of text in a blockquote.<br><br>
-                                    Some more text down here, too.<br><br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;Let's tuck this line in here<br><br>
-                                    We skipped a line there, didn't we?</blockquote></td>
-                                  <td colspan="2">
+                                        > Some more text down here, too.<br>
+                                        ><br>
+                                        >> Let's tuck this line in here<br>
+                                        ><br>
+                                        > We skipped a line there, didn't we?</code></td>
+                                <td>
+                                    <blockquote>This is a little bit of text in a blockquote.<br><br>
+                                        Some more text down here, too.<br><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Let's tuck this line in here<br><br>
+                                        We skipped a line there, didn't we?</blockquote>
+                                </td>
+                                <td colspan="2">
                                     <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/bq3.png"></div>
                                 </td>
                             </tr>
@@ -832,9 +849,9 @@
                         </tbody>
                     </table>
                     <br>
-                    <p><span class="alert alert-warning" role="alert"><b>Note: </b>TAB
-                            doesn't work in the MeWe editor, hence no indentation. Spaces
-                            used instead are parsed out.</span></p>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>TAB
+                        doesn't work in the MeWe editor, hence no indentation. Spaces
+                        used instead are parsed out.</div>
                     <br>
                     <h3>Unordered Lists (or Bullet Points)</h3>
                     <p>To create an unordered list, add dashes (<code>-</code>),
@@ -928,15 +945,13 @@
                         </tbody>
                     </table>
                     <br>
-                    <p><span class="alert alert-warning" role="alert"><b>Note: </b>TAB
-                            doesn't work in the MeWe editor, hence no indentation. Spaces
-                            used instead are parsed out.</span></p>
-                    <p><span class="alert alert-info" role="alert">Additional List features found in Markdown rely on indents and cannot be used on MeWe.</span></p>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>TAB
+                        doesn't work in the MeWe editor, hence no indentation. Spaces
+                        used instead are parsed out.</div>
+                    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle" aria-hidden="true"></i> Additional list features found in Markdown rely on indents and cannot be used on <strong>MeWe</strong>.</div>
                     <br>
-                    <h3>Links</h3>
-                    <p> To create a link, enclose the link text in brackets (e.g., <code>[DuckDuckGo]</code>)
-                        and then follow it immediately with the URL in parentheses (e.g.,
-                        <code>(https://duckduckgo.com)</code>).</p>
+                    <h3>Code</h3>
+                    <p>To denote a word or phrase as code, enclose it in tick marks <code>(`)</code>.</p>
                     <p></p>
                     <p></p>
                     <table style="width: 100%" border="1">
@@ -950,27 +965,119 @@
                                 <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
                             </tr>
                             <tr>
-                                <td><code>[This is a link to MeWe!](https://www.mewe.com)</code></td>
-                                <td><a href="https://www.mewe.com" target="_blank">This is a
-                                        link to MeWe!</a></td>
+                                <td><code>At the command prompt, type `nano`.</code></td>
+                                <td>At the command prompt, type <code>nano</code>.
                                 <td colspan="2">
-                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.mewe.com" target="_blank"><img src="images/link1.png"></a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><code>I can [put a link](https://www.google.com) anywhere
-                                        I want!</code></td>
-                                <td>I can <a href="https://www.google.com" target="_blank">put
-                                        a link</a> anywhere I want!</td>
-                                <td colspan="2">
-                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://www.google.com" target="_blank"><img src="images/link2.png"></a></div>
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/code1.png"></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <h3>Escaping Tick Marks (Code)</h3>
+                    <p>If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks <code>(``)</code>. This doesn't work in <b>MeWe</b>, but you can use the standard backslash <code>(\)</code> method covered earlier.</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-danger" role="alert" width="1px"><strong>Failed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>``Use `code` in your Markdown file.``</code></td>
+                                <td>Use `code` in your Markdown file.</td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><img src="images/code2.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Fenced Code Blocks</h3>
+                    <p>The basic Markdown syntax allows you to create code blocks by indenting lines by four spaces or one tab. Since MeWe strips leading spaces and doesn't allow indents, try using fenced code blocks. Depending on your Markdown processor or editor, you’ll use three tick marks <code>(```)</code> or three tildes <code>(~~~)</code> on the lines before and after the code block. The best part? You don’t have to indent any lines!</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>```<br>
+                                        {<br>
+                                        "firstName": "John",<br>
+                                        "lastName": "Smith",<br>
+                                        }<br>
+                                        ```
+                                    </code>
+                                </td>
+                                <td>
+                                    <code>```<br>
+                                        {<br>
+                                        "firstName": "John",<br>
+                                        "lastName": "Smith",<br>
+                                        }<br>
+                                        ```
+                                    </code></td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/code3.png"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>~~~<br>
+                                        {<br>
+                                        "firstName": "John",<br>
+                                        "lastName": "Smith",<br>
+                                        }<br>
+                                        ~~~
+                                    </code>
+                                </td>
+                                <td>
+                                    <code>~~~<br>
+                                        {<br>
+                                        "firstName": "John",<br>
+                                        "lastName": "Smith",<br>
+                                        }<br>
+                                        ~~~
+                                    </code></td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/code3.png"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>```javascript<br>
+                                        var s = "JavaScript syntax highlighting";<br>
+                                        alert(s);<br>
+                                        ```
+                                    </code>
+                                </td>
+                                <td>
+                                    <code>```javascript<br>
+                                        var s = "JavaScript syntax highlighting";<br>
+                                        alert(s);<br>
+                                        ```
+                                    </code></td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/code4.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>We tried javascript, PHP, Perl, HTML, HTML5 and PHP. Javascript was the only one recognized.</div><br>
                     <h3>Links</h3>
-                    <p> To create a link, enclose the link text in brackets (e.g., <code>[Duck
-                            Duck Go]</code>) and then follow it immediately with the URL in
+                    <p> To create a link, enclose the link text in brackets (e.g., <code>[DuckDuckGo]</code>) and then follow it immediately with the URL in
                         parentheses (e.g., <code>(https://duckduckgo.com)</code>).</p>
                     <p></p>
                     <p></p>
@@ -1143,6 +1250,83 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3>Tables</h3>
+                    <p>To add a table, use three or more hyphens (<code>---</code>) to create each column’s header, and use pipes (<code>|</code>) to separate each column. You can optionally add pipes on either end of the table. Spacing does not need to mirror what you want your table to look like.</p>
+                    <div class="alert alert-success"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> <strong>Tip:</strong> Creating tables with hyphens and pipes can be tedious. To speed up the process, try using the <a href="http://www.tablesgenerator.com/markdown_tables" target="_blank">Markdown Tables Generator</a>. Build a table using the graphical interface, and then copy the generated Markdown-formatted text into the <strong>MeWe</strong> editor.</div>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>|&nbsp;Syntax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Description&nbsp;|<br>
+                                        |&nbsp;-----------&nbsp;|&nbsp;-----------&nbsp;|<br>
+                                        |&nbsp;Header&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                                        |&nbsp;Paragraph&nbsp;&nbsp;&nbsp;|&nbsp;Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></td>
+                                <td>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Syntax</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Header</td>
+                                                <td>Title</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paragraph</td>
+                                                <td>Text</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/table1.png"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>| Syntax | Description |<br>
+                                        | ----------- | ----------- |<br>
+                                        | Header | Title |<br>
+                                        | Paragraph | Text |</code></td>
+                                <td>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Syntax</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Header</td>
+                                                <td>Title</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paragraph</td>
+                                                <td>Text</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/table1.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>While MeWe does properly display the table, it is a borderless table.</div>
                     <!-- END SECTION 2 CONTENT -->
                 </div>
                 <div class="col-md-1"> </div>

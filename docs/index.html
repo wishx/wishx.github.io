@@ -105,7 +105,7 @@
                 <div class="col-md-1"> </div>
                 <div class="col-md-10">
                     <!-- START SECTION 2 CONTENT -->
-                   <h3>Emphasis</h3>
+                    <h3>Emphasis</h3>
                     <p> You can add emphasis by making text bold, italic, strikethrough
                         or a combination of each.</p>
                     <p></p>
@@ -346,7 +346,7 @@
                             </tr>
                         </tbody>
                     </table>
-                     <h3>Paragraphs</h3>
+                    <h3>Paragraphs</h3>
                     <p> To create paragraphs, use a blank line to separate one or more
                         lines of text. You may have to hold down Shift while hitting Enter
                         so you don't submit a post accidentally. You should not indent
@@ -478,9 +478,7 @@
                         </tbody>
                     </table>
                     <br>
-                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>
-                        <strong>MeWe</strong> does not insert line breaks after each markdown and removes
-                        line breaks after each line.</div>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>In browsers, <strong>MeWe</strong> does not insert line breaks after each heading and removes line breaks after each line. Headings <strong>DO</strong> work properly in the Android app.</div>
                     <h3><br>
                         Alternate Headings Syntax</h3>
                     <p> Alternatively, on the line below the text, add any number of <code>==</code>
@@ -1325,8 +1323,62 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3>Table Alignment</h3>
+                    <p>You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.</p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>|&nbsp;Syntax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Description&nbsp;|Test Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                                        |&nbsp;:---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;:----:&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---:|<br>
+                                        |&nbsp;Header&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Here's this&nbsp;&nbsp;&nbsp;|<br>
+                                        |&nbsp;Paragraph&nbsp;&nbsp;&nbsp;|&nbsp;Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;And more&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></td>
+                                <td>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align: left">Syntax</th>
+                                                <th style="text-align: center">Description</th>
+                                                <th style="text-align: right">Test Text</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: left">Header</td>
+                                                <td style="text-align: center">Title</td>
+                                                <td style="text-align: right">Here's this</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left">Paragraph</td>
+                                                <td style="text-align: center">Text</td>
+                                                <td style="text-align: right">And more</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/table2.png"></div>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
                     <br>
                     <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>While <strong>MeWe</strong> does properly display the table, it is a borderless table.</div>
+                    <h3>Formatting Text in Tables</h3>
+                    <p>You can format the text within tables. For example, you can add links, code (words or phrases in tick marks (<code>`</code>) only, not code blocks), and emphasis.<br>You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.</p>
+                    <p></p>
+                     <h3>Escaping Pipe Characters in Tables</h3>
+                    <p>You can display a pipe (<code>|</code>) character in a table by using its HTML character code (<code>&#124;</code>).</p>
+                    <p></p>
                     <!-- END SECTION 2 CONTENT -->
                 </div>
                 <div class="col-md-1"> </div>

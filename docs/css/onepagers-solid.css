@@ -186,7 +186,7 @@ S5. SECTIONS
 
 .section {
   color: #ffffff;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   min-height:40vh;
   background-attachment: fixed !important;
@@ -199,9 +199,9 @@ S5. SECTIONS
 
 .leadsection {
   color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 30px;
-  min-height:60vh;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  min-height:400vh;
   background-attachment: fixed !important;
   text-align: left;
 }

@@ -1180,6 +1180,31 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3>Disabling Automatic URL Linking</h3>
+                    <p>If you don’t want a URL to be automatically linked, you can remove the link by denoting the URL as code with tick marks (<code>`</code>).</p>
+                    <p></p>
+                    <p></p>
+                    <table style="width: 100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td class="alert alert-info" role="alert"><strong>Markdown
+                                        Text</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>Expected
+                                        Output</strong></td>
+                                <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
+                                <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>`https://www.mewe.com`</code></td>
+                                <td>https://www.mewe.com</td>
+                                <td colspan="2">
+                                    <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/link7.png"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <b>Note: </b>We marked this as <strong>Mixed</strong> because, while it doesn't hotlink the URL, it also encapsulates it in the <code>code</code> tag.</div>
                     <h3>Formatting Links</h3>
                     <p>
                         <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -1368,7 +1393,7 @@
                                     <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><img src="images/table2.png"></div>
                                 </td>
                             </tr>
-                           
+
                         </tbody>
                     </table>
                     <br>
@@ -1376,8 +1401,8 @@
                     <h3>Formatting Text in Tables</h3>
                     <p>You can format the text within tables. For example, you can add links, code (words or phrases in tick marks (<code>`</code>) only, not code blocks), and emphasis.<br>You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.</p>
                     <p></p>
-                     <h3>Escaping Pipe Characters in Tables</h3>
-                    <p>You can display a pipe (<code>|</code>) character in a table by using its HTML character code (<code>&#124;</code>).</p>
+                    <h3>Escaping Pipe Characters in Tables</h3>
+                    <p>You can display a pipe (<code>|</code>) character in a table by using its HTML character code (<code>&amp;#124;</code>).</p>
                     <p></p>
                     <!-- END SECTION 2 CONTENT -->
                 </div>

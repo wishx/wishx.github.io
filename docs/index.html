@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MeWe Markdown Usage Guide</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather%7COpen+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather%7COpen+Sans" rel="stylesheet"> -->
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/onepagers-solid.css" rel="stylesheet">
@@ -65,12 +65,12 @@
                         Markdown language.</p>
                     <div class="row">
                         <div class="col-md-6 contact-left">
-                          <a href="https://mewe.com/press" target="_blank"><img src="images/mewelogo300x185.png"></a>
+                            <a href="https://mewe.com/press" target="_blank"><img src="images/mewelogo300x185.png"></a>
                             <p><a href="https://mewe.com/press">MeWe</a> is the Next-Gen Social Network that<br>
-                                actually respects the privacy of its members.<br>No Ads. No Spyware. No BS.<br>Your world is <a href="https://mewe.com/press">#Not4Sale</a>.</p>   
-                           </div>
+                                actually respects the privacy of its members.<br>No Ads. No Spyware. No BS.<br>Your world is <a href="https://mewe.com/press">#Not4Sale</a>.</p>
+                        </div>
                         <div class="col-md-6 contact-right">
-                        <table style="width: 575px" border="0">
+                            <table style="width: 575px" border="0">
                                 <tbody>
                                     <tr>
                                         <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
@@ -111,20 +111,20 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><strong>MeWe</strong> parsed this differently, so there is a yellow bar on the right side.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+                                            <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;"><strong>MeWe</strong> parsed this differently, so there is a yellow bar on the right side.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><strong>MeWe</strong> failed to parse this, so there is a red bar on the right side.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+                                            <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><strong>MeWe</strong> failed to parse this, so there is a red bar on the right side.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                                         </td>
                                     </tr>
                             </table>
-                        </div> <!-- END SECTION 1 CONTENT -->
+                        </div>
                         <div class="col-md-1"> </div>
                     </div>
                     <p>This guide is intended for <strong>Desktop browser</strong> users and doesn't scale well on mobile browsers. I will attempt to put together an Android app usage guide based on current desktop findings in the future. I do not have access to an App/iOS device. If someone would like to take this guide and send screenshots, I will include them in another page in the future.</p>
-                    <p>The <b>MeWe Output</b> sections below are cut from screenshots from a <strong>MeWe</strong> test post with <a href="https://darkreader.org/" title="Dark Reader" target="_blank"><b>Dark Reader</b></a> activated which we recommend to reduce eye strain.</p>
+                    <p>The <b>MeWe Output</b> entries in the <b>Extended Syntax</b> section below are cut from screenshots from a <strong>MeWe</strong> test post with <a href="https://darkreader.org/" title="Dark Reader" target="_blank"><b>Dark Reader</b></a> activated which we recommend to reduce eye strain.</p>
                     <p>For more information about the <a href="https://mewe.com/join/mmug" target="_blank"><strong>MMUG MeWe Group</strong></a>, contract info, acknowledgements, etc., please click <a href="#section4"><strong>The MeWe Group</strong></a> here or anytime from the menu at the top of the page. Thank you. Enjoy the Guide.</p>
                     <!--      <p>Scroll down for the latest markdown syntax comparisons. It's a lot, so grab a beverage and get comfy. Thank you and enjoy!</p> -->
                     <!--/md-12 -->
@@ -137,6 +137,199 @@
                         <div class="col-md-1"> </div>
                         <div class="col-md-10">
                             <!-- START SECTION 2 CONTENT -->
+                            <h1>Basic Syntax</h1>
+                            <p><strong>Markdown</strong> is a simple way to format text that looks great on any device. It doesn’t do anything fancy like change the font size, color, or type — just the essentials, using keyboard symbols you already know.</p>
+                            <p></p>
+                            <table style="width: 100%" border="1">
+                                <thead>
+                                    <tr>
+                                        <td class="alert alert-info" role="alert"><strong>Type</strong></td>
+                                        <td class="alert alert-info" role="alert"><strong>Or</strong></td>
+                                        <td class="alert alert-info" role="alert"><strong>&hellip; to Get</strong></td>
+                                        <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>*Italic*</code></td>
+                                        <td><code>_Italic_</code></td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">><em>Italic</em></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>**Bold**</code></td>
+                                        <td><code>__Bold__</code></td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><strong>Bold</strong></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>***Bold and Italic***</code></td>
+                                        <td><code>___Bold and Italic___</code></td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><strong><em>Bold and Italic</em></strong></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>~~Strikethrough~~</code></td>
+                                        <td>&nbsp;</td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><s>Strikethrough</s></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code># Heading 1</code></td>
+                                        <td><code>Heading 1<br />=========</code></td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;">
+                                                <h2>Heading 1</h2> See notes below.
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>## Heading 2</code></td>
+                                        <td><code>Heading 2<br />---------</code></td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(141, 100, 14); border-right-width:5px;">
+                                                <h3>Heading 2</h3> See notes below.
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>[Link](http://a.com)</code>
+                                        </td>
+                                        <td> &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><a href="https://mewe.com/">Link</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>
+                                                ![Image](http://url/a.png)</code>
+                                        </td>
+                                        <td><code>
+                                                ![Image][1]<br />
+                                                &#8942;<br />
+                                                [1]: http://url/b.jpg</code>
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;">
+                                                <img src="images/mewe-favicon.png" width="36" height="36" alt="MeWe" /><br />See notes below.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>
+                                                &gt; Blockquote</code>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                <blockquote>Blockquote</blockquote>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>
+                                                * List<br />
+                                                * List<br />
+                                                * List
+                                            </code>
+                                        </td>
+                                        <td><code>
+                                                - List<br />
+                                                - List<br />
+                                                - List
+                                            </code>
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                <ul>
+                                                    <li>List</li>
+                                                    <li>List</li>
+                                                    <li>List</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>1. One<br />
+                                                2. Two<br />
+                                                3. Three
+                                            </code>
+                                        </td>
+                                        <td><code>1) One<br />
+                                                2) Two<br />
+                                                3) Three
+                                            </code>
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                <ol>
+                                                    <li>One</li>
+                                                    <li>Two</li>
+                                                    <li>Three</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Horizontal Rule<br />
+                                            <br /><code>
+                                                ---</code>
+                                        </td>
+                                        <td>
+                                            Horizontal Rule<br />
+                                            <br /><code>
+                                                ***</code>
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                Horizontal Rule
+                                                <hr width="90%" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>
+                                                `Inline code` with backticks</code>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                <code>Inline code</code> with backticks</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>
+                                                ```<br />
+                                                # code block<br />
+                                                print '3 backticks or'<br />
+                                                print 'indent 4 spaces'<br />
+                                                ```</code>
+                                        </td>
+                                        <td> &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;">
+                                                <div><img src="images/code-basic.png" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong> In browsers, <strong>MeWe</strong> doesn't parse Headings correctly. It will only make the text bold. However, Headings <strong>DO</strong> seem to work properly in the Android app and maybe the iOS app.</div>
+                            <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong> Images are not parsed by <strong>MeWe</strong> in browsers or apps. If an image is linked using Markdown, it will disregard it as an image and only hotlink the image URL.</div>
+                            <hr>
+                            <h1>Extended Syntax</h1>
                             <h3>Emphasis</h3>
                             <p> You can add emphasis by making text bold, italic, strikethrough
                                 or a combination of each.</p>
@@ -510,7 +703,7 @@
                                 </tbody>
                             </table>
                             <br>
-                            <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>In browsers, <strong>MeWe</strong> does not insert line breaks after each heading and removes line breaks after each line. Headings <strong>DO</strong> work properly in the Android app.</div>
+                            <div class="alert alert-warning" role="alert"><i class="fa fa-sticky-note" aria-hidden="true"></i> <strong>Note:</strong>In browsers, <strong>MeWe</strong> does not insert line breaks after each heading and removes line breaks after each line. Headings <strong>DO</strong> work properly in the Android app and maybe iOS.</div>
                             <h3><br>
                                 Alternate Headings Syntax</h3>
                             <p> Alternatively, on the line below the text, add any number of <code>==</code>

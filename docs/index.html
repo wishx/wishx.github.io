@@ -70,16 +70,16 @@
                                 actually respects the privacy of its members.<br>No Ads. No Spyware. No BS.<br>Your world is <a href="https://mewe.com/press">#Not4Sale</a>.</p>
                         </div>
                         <div class="col-md-6 contact-right">
-                            <table style="width: 575px" border="0">
+                            <table border="0">
                                 <tbody>
                                     <tr>
                                         <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
                                         <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
-                                        <td><span style="padding-left: 5px">MeWe parsed all entries successfully and as expected.</span></td>
+                                        <td><span style="padding-left: 5px">MeWe parsed all entries successfully as expected.</span></td>
                                     </tr>
                                 </tbody>
                             </table><br>
-                            <table style="width: 575px" border="0">
+                            <table border="0">
                                 <tbody>
                                     <tr>
                                         <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
@@ -89,7 +89,7 @@
                                 </tbody>
                             </table>
                             <br>
-                            <table style="width: 576px" border="0">
+                            <table border="0">
                                 <tbody>
                                     <tr>
                                         <td class="alert alert-info" role="alert"><strong>MeWe Output</strong></td>
@@ -442,51 +442,43 @@
                                         <td class="alert alert-warning" role="alert" width="1px"><strong>Mixed</strong></td>
                                     </tr>
                                     <tr>
-                                        <td><code>This will be ***bold and italic text***.</code></td>
+                                        <td><code>It's ***bold & italic*** text.</code></td>
+                                        <td>It's <b><i>bold &amp; italic</i></b> text.</td>
+                                        <td colspan="2">
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba1.png"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>It's ___bold & italic text___.</code></td>
                                         <td>This will be <b><i>bold and italic text</i></b>.</td>
                                         <td colspan="2">
                                             <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba1.png"></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>This will be ___bold and italic text___.</code></td>
-                                        <td>This will be <b><i>bold and italic text</i></b>.</td>
+                                        <td><code>It's __*bold & italict*__ text.</code></td>
+                                        <td>It's <b><i>bold &amp; italic</i></b> text.</td>
                                         <td colspan="2">
-                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba2.png"></div>
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba1.png"><br></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>This will be __*bold and italic text*__.</code></td>
-                                        <td>This will be <b><i>bold and italic text</i></b>.</td>
+                                        <td><code>It's **_bold & italic_** text.</code></td>
+                                        <td>It's <b><i>bold &amp; italic</i></b>text.</td>
                                         <td colspan="2">
-                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba3.png"><br></div>
+                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba1.png"><br></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>This will be **_bold and italic text_**.</code></td>
-                                        <td>This will be <b><i>bold and italic text</i></b>.</td>
-                                        <td colspan="2">
-                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba4.png"><br></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>This text ***right here*** will be bold and italic.</code></td>
-                                        <td>This text <b><i>right here</i></b> will be bold and
-                                            italic.</td>
-                                        <td colspan="2">
-                                            <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/ba5.png"><br></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>NoSpaces***ShowsHow***TheyWorkAnywhere.</code></td>
-                                        <td>NoSpaces<b><i>ShowsHow</i></b>TheyWorkAnywhere.</td>
+                                        <td><code>NoSpaces***Here.</code></td>
+                                        <td>No<b><i>Spaces</i></b>Here.</td>
                                         <td colspan="2">
                                             <div style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><img src="images/ba6.png"><br></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>NoSpaces___ShowsHow___TheyWorkAnywhere.</code></td>
-                                        <td>NoSpaces<b><i>ShowsHow</i></b>TheyWorkAnywhere.</td>
+                                        <td><code>No___Spaces___Here.</code></td>
+                                        <td>No<b><i>Spaces</i></b>Here.</td>
                                         <td colspan="2">
                                             <div width="1px" height="1px" style="border: solid 0 rgb(99, 39, 49); border-right-width:5px;"><img src="images/ba7.png"><br></div>
                                         </td>
@@ -508,15 +500,15 @@
                                         <td class="alert alert-success" role="alert" width="1px"><strong>Passed</strong></td>
                                     </tr>
                                     <tr>
-                                        <td><code>This will be ~~stricken text~~.</code></td>
-                                        <td>This will be <s>stricken text</s>.</td>
+                                        <td><code>~~Stricken text~~.</code></td>
+                                        <td><s>Stricken text</s>.</td>
                                         <td colspan="2">
                                             <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/strike1.png"><br></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>NoSpaces~~ShowsHow~~TheyWorkAnywhere.</code></td>
-                                        <td>NoSpaces<s>ShowsHow</s>TheyWorkAnywhere.</td>
+                                        <td><code>No~~Spaces~~Here.</code></td>
+                                        <td>No<s>Spaces</s>Here.</td>
                                         <td colspan="2">
                                             <div style="border: solid 0 rgb(68, 101, 39); border-right-width:5px;"><img src="images/strike2.png"><br></div>
                                         </td>
